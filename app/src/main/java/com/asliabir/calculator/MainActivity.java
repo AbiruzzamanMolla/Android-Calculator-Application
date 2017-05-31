@@ -13,9 +13,10 @@ public class MainActivity extends AppCompatActivity {
     EditText number1, number2;
     Button add, sub, mul, div;
 
-    float result_num;
-    public int num1;
-    public int num2;
+    float result_div;
+    int result_num;
+    int num1;
+    int num2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,8 +66,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 num1 = Integer.parseInt(number1.getText().toString());
                 num2 = Integer.parseInt(number2.getText().toString());
-                result_num = num1 / num2;
-                result.setText(String.valueOf(result_num));
+                result_div = num1 / num2;
+                result.setText(String.valueOf(result_div));
 
             }
         });
