@@ -11,12 +11,10 @@ public class MainActivity extends AppCompatActivity {
 
     TextView result;
     EditText number1, number2;
-    Button add, sub, mul, div;
+    Button add, sub, mul, div, rem;
 
-    float result_div;
     int result_num;
-    int num1;
-    int num2;
+    int num1, num2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         sub = (Button)findViewById(R.id.sub);
         mul = (Button)findViewById(R.id.mul);
         div = (Button)findViewById(R.id.div);
+        rem = (Button)findViewById(R.id.rem);
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,8 +65,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 num1 = Integer.parseInt(number1.getText().toString());
                 num2 = Integer.parseInt(number2.getText().toString());
-                result_div = num1 / num2;
+                double result_div = (double) num1 / num2;
                 result.setText(String.valueOf(result_div));
+
+            }
+        });
+
+        rem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                num1 = Integer.parseInt(number1.getText().toString());
+                num2 = Integer.parseInt(number2.getText().toString());
+                result_num = num1 % num2;
+                result.setText(String.valueOf(result_num));
 
             }
         });

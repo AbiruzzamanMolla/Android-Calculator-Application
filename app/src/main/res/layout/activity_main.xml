@@ -11,7 +11,8 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
-    tools:context="com.asliabir.calculator.MainActivity">
+    tools:context="com.asliabir.calculator.MainActivity"
+    android:weightSum="1">
 
     <EditText
         android:id="@+id/number1"
@@ -59,4 +60,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Divide" />
+
+    <Button
+        android:id="@+id/rem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reminder" />
+
+    <EditText
+        android:id="@+id/appinfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:layout_marginTop="50dp"
+        android:text="Simple Calculator
+    Version 1.3"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="visible" />
+
 </LinearLayout>
