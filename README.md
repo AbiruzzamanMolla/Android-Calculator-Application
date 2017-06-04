@@ -13,11 +13,18 @@ How to install this app in your mobile.
 ```
 ### Changelog
 
+**Version 1.3**
+
+- Added Reminder Option
+- Bug Fixed on Floating number
+
 **Version 1.2**
+
 1. Solved problem for Floating number in result.
 2. Changed Version number.
 
 **Version 1.1**
+
 1. Added Icon
 2. Added Beta version tag.
 
